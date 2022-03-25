@@ -1,0 +1,23 @@
+.profile__avatar-area {
+  margin: 0 auto 26px;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+  background-image: url(../../../images/logo/edit_icon.svg);
+  width: 120px;
+  height: 120px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile__avatar:hover {
+  opacity: 0.2;
+}
+
+@media (min-width: 1280px) {
+  .profile__avatar-area {
+    margin-left: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}

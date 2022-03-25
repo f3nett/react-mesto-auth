@@ -1,0 +1,19 @@
+.page__content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 321px) {
+  .page__content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__content {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}

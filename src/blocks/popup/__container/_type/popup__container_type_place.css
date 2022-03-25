@@ -1,0 +1,12 @@
+.popup__container_type_place {
+  border-radius: 10px;
+  max-width: 282px;
+  padding: 25px 22px;
+}
+
+@media (min-width: 1280px) {
+  .popup__container_type_place {
+    max-width: 430px;
+    padding: 34px 36px 37px;
+  }
+}

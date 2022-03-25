@@ -1,0 +1,12 @@
+.popup__container_type_profile {
+  border-radius: 10px;
+  max-width: 282px;
+  padding: 25px 22px;
+}
+
+@media (min-width: 1280px) {
+  .popup__container_type_profile {
+    max-width: 430px;
+    padding: 34px 36px 37px;
+  }
+}

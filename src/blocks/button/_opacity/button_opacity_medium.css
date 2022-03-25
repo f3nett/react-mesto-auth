@@ -1,0 +1,7 @@
+.button_opacity_medium {
+  transition: opacity 0.4s ease;
+}
+
+.button_opacity_medium:hover {
+  opacity: 0.6;
+}

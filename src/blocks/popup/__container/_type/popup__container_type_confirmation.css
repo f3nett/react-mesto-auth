@@ -1,0 +1,14 @@
+.popup__container_type_confirmation {
+  padding: 22px 23px 23px;
+  border-radius: 10px;
+  max-width: 282px;
+  max-height: 118px;
+}
+
+@media (min-width: 1280px) {
+  .popup__container_type_confirmation {
+    padding: 34px 36px 36px;
+    max-width: 430px;
+    max-height: 181px;
+  }
+}

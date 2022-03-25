@@ -1,0 +1,19 @@
+.footer__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #545454;
+  padding-top: 48px;
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+@media (min-width: 1280px) {
+  .footer__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 67px;
+    padding-bottom: 60px;
+  }
+}

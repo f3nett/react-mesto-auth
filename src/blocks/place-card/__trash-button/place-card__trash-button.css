@@ -1,0 +1,12 @@
+.place-card__trash-button {
+  background: transparent;
+  background: url(../../../images/logo/trash_icon.svg);
+  background-size: cover;
+  width: 18px;
+  height: 19.3px;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  visibility: hidden;
+}

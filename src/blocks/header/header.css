@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 28px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding-top: 45px;
+  }
+}

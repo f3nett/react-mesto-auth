@@ -1,0 +1,9 @@
+.place-card__like-button {
+  background: transparent;
+  background: url(../../../images/logo/like_icon.svg);
+  background-size: cover;
+  width: 22px;
+  height: 19px;
+  border: none;
+  flex-shrink: 0;
+}

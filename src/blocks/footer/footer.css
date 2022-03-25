@@ -1,0 +1,17 @@
+.footer {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  padding-left: 19px;
+  padding-right: 19px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding: 0;
+  }
+}
