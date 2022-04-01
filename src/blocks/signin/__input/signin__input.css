@@ -1,0 +1,20 @@
+.signin__input {
+  margin: 4px 0 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #cccccc;
+  background-color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  border-style: none;
+  min-width: 256px;
+  border-bottom: 2px solid rgba(204, 204, 204, 1);
+}
+
+@media (min-width: 1280px) {
+  .signin__input {
+    min-width: 354px;
+  }
+}

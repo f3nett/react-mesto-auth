@@ -1,0 +1,7 @@
+.button_opacity_extra-lite {
+  transition: opacity 0.4s ease;
+}
+
+.button_opacity_extra-lite:hover {
+  opacity: 0.85;
+}

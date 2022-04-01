@@ -1,0 +1,8 @@
+.navigation__menu-button {
+  background-image: url(../../../images/logo/main_menu.svg);
+  width: 28px;
+  height: 24px;
+  background-size: cover;
+  border: none;
+  background-color: #000000;
+}

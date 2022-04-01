@@ -1,0 +1,13 @@
+.header__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 31px;
+}
+
+@media (min-width: 1280px) {
+  .header__main {
+    padding-bottom: 41px;
+  }
+}

@@ -1,0 +1,12 @@
+.navigation__link_type_in {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (min-width: 1280px) {
+  .navigation__link_type_in {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

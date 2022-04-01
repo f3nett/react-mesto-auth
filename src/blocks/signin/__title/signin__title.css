@@ -1,0 +1,18 @@
+.signin__title {
+  margin: 40px 0 23px;
+  color: #ffffff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media (min-width: 1280px) {
+  .signin__title {
+    margin-top: 60px;
+    margin-bottom: 33px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
