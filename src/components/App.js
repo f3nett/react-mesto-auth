@@ -13,7 +13,7 @@ import Login from './Login';
 import Register from './Register';
 import InfoTooltip from './InfoTooltip';
 import api from '../utils/api';
-import * as Auth from './Auth';
+import * as auth from '../utils/auth';
 import {CurrentUserContext} from '../contexts/CurrentUserContext';
 
 function App() {
@@ -36,14 +36,16 @@ function App() {
   
   React.useEffect(() => {
       tokenCheck();
-      Promise.all([api.getUser(), api.getCards()])
-      .then(([userData, cardsData]) => {
-        setCurrentUser(userData);
-        setCards(cardsData);
-      })
-      .catch(err => {
-          console.log(err);
-      })
+      if (loggedIn) {
+        Promise.all([api.getUser(), api.getCards()])
+        .then(([userData, cardsData]) => {
+          setCurrentUser(userData);
+          setCards(cardsData);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+      }
   }, []);
 
   React.useEffect(() => {
@@ -164,24 +166,23 @@ function App() {
   }
 
   function handleLogin(email, password) {
-    Auth.login(email, password)
+    auth.login(email, password)
       .then((data) => {
           if (data.token){
             localStorage.setItem('jwt', data.token);
             setLoggedIn(true);
             tokenCheck();
-            setIsTooltipError(false);
           }
       })
       .catch(err => {
         console.log(err)
         setIsTooltipError(true);
-      })
-      .finally(() => setIsInfoTooltipOpen(true));
+        setIsInfoTooltipOpen(true);
+      });
   }
 
   function handleRegister(email, password) {
-    Auth.register(email, password)
+    auth.register(email, password)
       .then((res) => {
         setUserData({email:'', password:''});
         signinNavigate(); 
@@ -194,9 +195,9 @@ function App() {
   }
 
   function tokenCheck() {
-    if (localStorage.getItem('jwt')) {
-      let jwt=localStorage.getItem('jwt');
-      Auth.getContent(jwt)
+    let jwt=localStorage.getItem('jwt');
+    if (jwt) {
+      auth.getContent(jwt)
         .then((res) => {
           if (res) {
             setEmail(res.data.email);
