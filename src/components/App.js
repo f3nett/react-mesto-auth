@@ -45,13 +45,8 @@ function App() {
         .catch(err => {
             console.log(err);
         })
+        .finally(() => navigate('/main'));
       }
-  }, []);
-
-  React.useEffect(() => {
-    if (loggedIn) {
-      navigate('/main');
-    }
   }, [loggedIn]);
     
   function handleUpdateUser(currentUser) {
