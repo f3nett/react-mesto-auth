@@ -138,7 +138,7 @@ function App() {
   function handleConfirmDelete(removedCard) {
     api.deleteCard(removedCard)
     .then((res) => {
-      setCards((card) => card.filter(c => c._id != removedCard).map((c) => c));
+      setCards((card) => card.filter(c => c._id !== removedCard).map((c) => c));
       console.log(res);
       closeAllPopups();
     })
